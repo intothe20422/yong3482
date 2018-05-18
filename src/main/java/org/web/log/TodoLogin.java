@@ -33,7 +33,7 @@ public class TodoLogin extends HttpServlet {
 			session.setAttribute("user", user);
 			request.setAttribute("name", user.getName());
 			
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
+			request.getRequestDispatcher("/index2.jsp").forward(request, response);
 			
 		} else {
 			request.setAttribute("error","Wrong password");

@@ -23,10 +23,10 @@ public class TodoLogout extends HttpServlet {
 		if(user != null) {
 			session.invalidate();
 			
-			response.sendRedirect("/index.jsp");
+			response.sendRedirect("/index2.jsp");
 		} else {
 			request.setAttribute("", "");
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			request.getRequestDispatcher("index2.jsp").forward(request, response);
 		}
 	}
 
